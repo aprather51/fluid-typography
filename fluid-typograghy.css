@@ -1,0 +1,28 @@
+/* If use styled-components, include this into globals */
+
+:root { 
+  font-size: 100%;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4em;
+}
+
+/* Minimum Size (Extra Small Screen such as small mobile phones — 320px) */
+@media screen and (min-width: 20em) {
+    body {
+        font-size: calc(1em + (1.3125 - 1) * ((100vw - 20em) / (80 - 20)));
+        line-height: calc(1.4em + (1.8 - 1.4) * ((100vw - 20em) / (80 - 20)));
+    }
+
+}
+
+/* Maximum Size (Large Screen such as Desktop or Laptop — 1280px) */
+@media (min-width: 80em) {
+    body {
+        font-size: 1.3125em;
+        line-height: 1.8em;
+    }
+
+}
