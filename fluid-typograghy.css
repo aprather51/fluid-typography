@@ -1,23 +1,5 @@
 /* If use styled-components, include this into globals */
 
-:root { 
-  font-size: 100%;
-}
-
-body {
-    font-size: 1em;
-    line-height: 1.4em;
-}
-
-/* Minimum Size (Extra Small Screen such as small mobile phones — 320px) */
-@media screen and (min-width: 20em) {
-    body {
-        font-size: calc(1em + (1.3125 - 1) * ((100vw - 20em) / (80 - 20)));
-        line-height: calc(1.4em + (1.8 - 1.4) * ((100vw - 20em) / (80 - 20)));
-    }
-
-}
-
 /* Maximum Size (Large Screen such as Desktop or Laptop — 1280px) */
 @media (min-width: 80em) {
     body {
@@ -26,3 +8,46 @@ body {
     }
 
 }
+
+  body {
+    font-family: 'Merriweather', serif;
+    font-size: 1em;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Extra Small Mobile (320px) */
+  @media screen and (min-width: ${theme.breakpoints.xs}) {
+    body {
+      font-size: calc(1em + 6 * ((100vw - 320px) / 680));
+    }
+  }
+  
+  /* Desktop (1000px) */
+  @media screen and (min-width: ${theme.breakpoints.desktop}) {
+    body {
+      font-size: 1.3125em;
+    }
+  }
+
+/*************************************
+*      Old -- Use Update (Above)     *
+**************************************/
+
+/* :root { 
+  font-size: 100%;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4em;
+} */
+
+/* Minimum Size (Extra Small Screen such as small mobile phones — 320px) */
+/* @media screen and (min-width: 20em) {
+    body {
+        font-size: calc(1em + (1.3125 - 1) * ((100vw - 20em) / (80 - 20)));
+        line-height: calc(1.4em + (1.8 - 1.4) * ((100vw - 20em) / (80 - 20)));
+    }
+
+} */
+
