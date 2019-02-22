@@ -1,4 +1,5 @@
 /* If use styled-components, include this into globals */
+/* See here for additional info https://css-tricks.com/snippets/css/fluid-typography/ */
 
 /* Maximum Size (Large Screen such as Desktop or Laptop — 1280px) */
 @media (min-width: 80em) {
@@ -10,7 +11,7 @@
 }
 
   body {
-    font-family: 'Merriweather', serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 1em;
     text-rendering: optimizeLegibility;
   }
